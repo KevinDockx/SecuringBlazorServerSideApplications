@@ -49,10 +49,10 @@ namespace BethanysPieShopHRM.Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            
+            app.UseCors("Open");
 
             app.UseAuthorization();
-
-            app.UseCors("Open");
 
             app.UseEndpoints(endpoints =>
             {
